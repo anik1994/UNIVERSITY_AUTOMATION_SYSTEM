@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  
+  
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans:600'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Student</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Faculty</label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+				<form method="POST" action="login.php">
+				<div class="group">
+					<label for="user" class="label">Student ID</label>
+					<input id="user" type="text" name="username" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" name="password" class="input" data-type="password">
+				</div>
+				
+				<div class="group">
+					<input type="submit" class="button" name="login_btn" value="Sign In">
+				</div>
+				</form>
+				<div class="hr"></div>
+			</div>
+			
+			<div class="sign-up-htm">
+				<form method="POST" action="loginfaculty.php">
+				<div class="group">
+					<label for="user" class="label">Teacher ID</label>
+					<input id="user" type="text" name="usernamefc" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" name="passwordfc" class="input" data-type="password">
+				</div>
+				
+				<div class="group">
+					<input type="submit" class="button" name="login_btnfc" value="Sign In">
+				</div>
+				</form>
+				<div class="hr"></div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+  
+  
+</body>
+</html>
